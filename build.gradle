@@ -1,0 +1,23 @@
+plugins {
+    id 'com.github.gmazzo.buildconfig' version "${BUILDCONFIG_VERSION}" apply false
+}
+
+allprojects {
+    group = 'com.notfoundname.deniquegames'
+    version = DENIQUEGAMES_VERSION
+}
+
+subprojects {
+    apply plugin: 'java'
+
+    repositories {
+        mavenLocal()
+        maven { url = 'https://repo.screamingsandals.org/public/' }
+    }
+
+    sourceCompatibility = '17.0'
+}
+
+gradle.buildFinished {
+    project.buildDir.deleteDir()
+}

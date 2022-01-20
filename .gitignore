@@ -1,0 +1,33 @@
+# idea-related
+/.idea/
+/out/
+/.idea_modules/
+*.iml
+*.ipr
+*.iws
+
+# eclipse-related
+/bin
+.settings
+.project
+.classpath
+
+# archives
+*.jar
+*.zip
+*.tar.gz
+
+# JVM error logs
+hs_log_pid
+
+# Windows thumbnail cache files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+# gradle-related
+/.gradle/
+/build/
+**/build/
+

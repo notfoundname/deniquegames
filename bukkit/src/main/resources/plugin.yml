@@ -1,0 +1,15 @@
+main: "com.notfoundname.deniquegames.DeniqueGamesBukkit"
+name: "DeniqueGames-Bukkit"
+version: "0.0.1-SNAPSHOT"
+authors:
+- "notfoundname"
+api-version: 1.13
+load: POSTWORLD
+depend:
+  - SlimeWorldManager
+commands:
+  deniquegames:
+    description: DeniqueGames main command
+    usage: "/deniquegames [subcommand]"
+    aliases:
+    - dg
