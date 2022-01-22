@@ -1,4 +1,4 @@
-##DeniqueGames
+## DeniqueGames
 ```
 A minigame for Minecraft where you need 
 to get the most points in microgames. 
@@ -38,5 +38,5 @@ TODO:
 - think how API should look like
 ```
 
-###Building the project
+### Building the project
 `gradle build`
