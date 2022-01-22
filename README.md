@@ -8,9 +8,8 @@ Requirements:
 - Paper (should work with 1.12.2, 1.17.1+ is supported)
 - (Advanced-)SlimeWorldManager (nothing else)
 
-Features:
-- Statistics, leaderboards
-  MySQL database support
+Planned Features:
+- Statistics, leaderboards, MySQL support
 - Multiple arenas with up to 12 players
 - API
 
@@ -36,6 +35,7 @@ Bossgames:
 
 TODO:
 - think how API should look like
+- make this working
 ```
 
 ### Building the project
