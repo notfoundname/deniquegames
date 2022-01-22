@@ -1,15 +1,18 @@
-# DeniqueGames
-A minigame for Minecraft where you need to get the most points in microgames, inspired by some big cube game server.
+##DeniqueGames
+```
+A minigame for Minecraft where you need 
+to get the most points in microgames. 
+Inspired by some big cube game server.
 
 Requirements:
-- Bukkit (1.17.1+)
-- AdvancedSlimeWorldManager (nothing else)
+- Paper (should work with 1.12.2, 1.17.1+ is supported)
+- (Advanced-)SlimeWorldManager (nothing else)
 
 Features:
-- Statistics, leaderboards with MySQL database support
+- Statistics, leaderboards
+  MySQL database support
 - Multiple arenas with up to 12 players
-- Dynamically load 
-- API (creating more microgames, bossgames)
+- API
 
 Microgames:
 - Find specific item in chests
@@ -20,9 +23,20 @@ Microgames:
 - Drop savefully to the ground
 - Feather collector
 - Arrow rain
-- _..later more or your own using API_
+- Maths
+- Questions
+- Floor is lava / ice
+- One in the chamber
+- ...later more or your own using API
 
 Bossgames:
 - Bow Spleef
 - Elytra Glider
 - Animal Fishing
+
+TODO:
+- think how API should look like
+```
+
+###Building the project
+`gradle build`

@@ -7,13 +7,13 @@ repositories {
 
 dependencies {
     compileOnly 'io.papermc.paper:paper-api:' + PAPERMC_VERSION
-    annotationProcessor 'org.screamingsandals.lib:annotation:' + SCREAMINGLIB_VERSION
     implementation 'org.screamingsandals.lib:core-bukkit:' + SCREAMINGLIB_VERSION
     implementation project(':DeniqueGames-API')
 }
 
 buildConfig {
-    className(DENIQUEGAMES_NAME + "Config")
+    className('PluginConstants')
+    packageName('com.notfoundname.deniquegames.bukkit')
     buildConfigField('String', 'NAME', "\"${DENIQUEGAMES_NAME}\"")
     buildConfigField('String', 'VERSION', "\"${DENIQUEGAMES_VERSION}\"")
 }

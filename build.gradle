@@ -13,9 +13,15 @@ subprojects {
     repositories {
         mavenLocal()
         maven { url = 'https://repo.screamingsandals.org/public/' }
+        maven { url = 'https://repo.rapture.pw/repository/maven-snapshots/' }
     }
 
-    sourceCompatibility = '17.0'
+    dependencies {
+        annotationProcessor 'org.screamingsandals.lib:annotation:' + SCREAMINGLIB_VERSION
+        implementation 'org.screamingsandals.lib:api-utils:' + SCREAMINGLIB_VERSION
+    }
+
+    sourceCompatibility = '11'
 }
 
 gradle.buildFinished {

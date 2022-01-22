@@ -1,0 +1,4 @@
+dependencies {
+    implementation 'org.screamingsandals.lib:core-bukkit:' + SCREAMINGLIB_VERSION
+    compileOnly 'com.grinderwolf:slimeworldmanager-api:' + SLIMEWORLDMANAGER_VERSION
+}
