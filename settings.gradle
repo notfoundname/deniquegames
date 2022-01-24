@@ -3,5 +3,8 @@ rootProject.name = 'DeniqueGames'
 include(':DeniqueGames-API')
 project(':DeniqueGames-API').projectDir = file('api')
 
+include(':DeniqueGames-Common')
+project(':DeniqueGames-Common').projectDir = file('common')
+
 include(':DeniqueGames-Bukkit')
 project(':DeniqueGames-Bukkit').projectDir = file('bukkit')

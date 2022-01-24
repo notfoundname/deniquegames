@@ -8,6 +8,7 @@ repositories {
 dependencies {
     compileOnly 'io.papermc.paper:paper-api:' + PAPERMC_VERSION
     implementation 'org.screamingsandals.lib:core-bukkit:' + SCREAMINGLIB_VERSION
+    implementation 'org.screamingsandals.lib:sidebar-bukkit:' + SCREAMINGLIB_VERSION
     implementation project(':DeniqueGames-API')
 }
 

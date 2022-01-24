@@ -4,8 +4,9 @@ import com.notfoundname.deniquegames.api.DeniqueGamesAPI;
 import com.notfoundname.deniquegames.api.game.Arena;
 import com.notfoundname.deniquegames.api.game.Bossgame;
 import com.notfoundname.deniquegames.api.game.Microgame;
-import org.screamingsandals.lib.Server;
+import net.kyori.adventure.text.Component;
 import org.screamingsandals.lib.plugin.PluginContainer;
+import org.screamingsandals.lib.sidebar.Sidebar;
 import org.screamingsandals.lib.utils.PlatformType;
 import org.screamingsandals.lib.utils.annotations.Plugin;
 import org.screamingsandals.lib.utils.annotations.PluginDependencies;
@@ -16,26 +17,30 @@ import java.util.List;
         name = PluginConstants.NAME,
         version = PluginConstants.VERSION,
         authors = { "notfoundname" })
-@PluginDependencies (
+@PluginDependencies(
         platform = PlatformType.BUKKIT,
         dependencies = { "SlimeWorldManager" })
 public class DeniqueGames extends PluginContainer implements DeniqueGamesAPI {
     
     private static DeniqueGames instance;
     
+    private List<Arena> arenas;
+    private List<Microgame> registeredMicrogames;
+    private List<Bossgame> registeredBossgames;
+    private Sidebar sidebar;
+    
     public DeniqueGames() {
         instance = this;
     }
     
     public static DeniqueGames getInstance() {
-        if (instance == null) {
-            throw new UnsupportedOperationException("Plugin has not been initialized yet!");
-        }
         return instance;
     }
     
     @Override
     public void load() {
+        this.sidebar = Sidebar.of()
+                .title(Component.text("DeniqueGames"));
     
     }
     
@@ -51,16 +56,22 @@ public class DeniqueGames extends PluginContainer implements DeniqueGamesAPI {
     
     @Override
     public List<Arena> getArenas() {
-        return null;
+        return arenas;
     }
     
     @Override
     public List<Microgame> getRegisteredMicrogames() {
-        return null;
+        return registeredMicrogames;
     }
     
     @Override
     public List<Bossgame> getRegisteredBossgames() {
-        return null;
+        return registeredBossgames;
     }
+    
+    @Override
+    public Sidebar getSidebar() {
+        return sidebar;
+    }
+    
 }
